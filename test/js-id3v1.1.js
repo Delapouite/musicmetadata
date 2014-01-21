@@ -7,10 +7,6 @@ function blobbyBuilder (data) {
   try {
     return new Blob([data]);
   } catch (e) {
-    window.BlobBuilder = window.BlobBuilder ||
-        window.WebKitBlobBuilder ||
-        window.MozBlobBuilder ||
-        window.MSBlobBuilder;
     var bb = new BlobBuilder();
     bb.append(data);
     return bb.getBlob();
