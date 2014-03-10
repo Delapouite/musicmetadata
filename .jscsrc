@@ -1,0 +1,5 @@
+{
+	"disallowMixedSpacesAndTabs": true,
+	"disallowTrailingWhitespace": true,
+	"validateQuoteMarks": "'"
+}

@@ -2,7 +2,7 @@ var drop = require('drag-and-drop-files');
 var musicmetadata = require('../lib');
 
 drop(document, function (files) {
-  var mm = musicmetadata(files[0])
+  var mm = musicmetadata(files[0]);
 
   mm.on('metadata', function (result) {
     console.log(result);
@@ -14,8 +14,8 @@ drop(document, function (files) {
     }
     var div = document.getElementById('info');
     div.innerText = JSON.stringify(result, undefined, 2);
-  })
+  });
   mm.on('done', function (err) {
     if (err) throw err;
-  })
+  });
 });

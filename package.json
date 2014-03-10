@@ -56,9 +56,9 @@
     "url": "git://github.com/leetreveil/node-musicmetadata.git"
   },
   "jshintConfig": {
-    "asi": true,
-    "node": true,
+    "indent": 2,
     "maxlen": 100,
-    "indent": 2
+    "node": true,
+    "unused": true
   }
 }
